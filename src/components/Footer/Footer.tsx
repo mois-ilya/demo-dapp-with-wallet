@@ -1,4 +1,4 @@
-import {BorderRadius, Locales, ReturnStrategy, Theme, THEME, useTonConnectUI} from "@tonconnect/ui-react";
+import {BorderRadius, Locales, ReturnStrategy, Theme, THEME, useTonConnectUI} from "@tonkeeper/tonconnect-ui-react";
 import './footer.scss';
 import {useEffect, useState} from "react";
 import {ColorsModal} from "./ColorsModal/ColorsModal";
@@ -17,6 +17,11 @@ export const Footer = () => {
 
     const onLangChange = (lang: string) => {
         setOptions({language: lang as Locales})
+    }
+
+    const onPrimaryChange = (value: string) => {
+        console.log(value, value === 'yes' ? 'tonkeeper' : null)
+        setOptions({primaryWalletAppName: value === 'yes' ? 'tonkeeper' : null})
     }
 
     const onThemeChange = (theme: string) => {
@@ -60,6 +65,14 @@ export const Footer = () => {
     }, [checkboxes])
 
     return <footer className="footer">
+        <div>
+            <label>Tonkeeper primary</label>
+            <select onChange={e => onPrimaryChange(e.target.value)}>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </div>
+
         <div>
             <label>language</label>
             <select onChange={e => onLangChange(e.target.value)}>

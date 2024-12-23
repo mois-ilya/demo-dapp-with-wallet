@@ -2,8 +2,8 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import ReactJson from 'react-json-view';
 import './style.scss';
 import {TonProofDemoApi} from "../../TonProofDemoApi";
-import {useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
-import {CHAIN} from "@tonconnect/ui-react";
+import {useTonConnectUI, useTonWallet} from "@tonkeeper/tonconnect-ui-react";
+import {CHAIN} from "@tonkeeper/tonconnect-ui-react";
 import useInterval from "../../hooks/useInterval";
 
 

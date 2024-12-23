@@ -1,4 +1,4 @@
-import {ColorsSet, THEME, useTonConnectUI} from "@tonconnect/ui-react";
+import {ColorsSet, THEME, useTonConnectUI} from "@tonkeeper/tonconnect-ui-react";
 import {FunctionComponent, useEffect, useState} from "react";
 import './style.scss';
 
