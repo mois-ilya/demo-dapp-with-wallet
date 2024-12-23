@@ -46,9 +46,11 @@ function App() {
             appName: "tokenpocket",
             name: "TokenPocket",
             imageUrl: "https://hk.tpstatic.net/logo/tokenpocket.png",
-            aboutUrl: "https://tokenpocket.pro",
+            aboutUrl: "https://www.tokenpocket.pro",
+            universalLink: "https://tp-lab.tptool.pro/ton-connect/",
             jsBridgeKey: "tokenpocket",
-            platforms: ["ios", "android"]
+            bridgeUrl: "https://ton-connect.mytokenpocket.vip/bridge",
+            platforms: ["ios", "android", "macos", "windows", "linux"]
           },
           {
             appName: "dewallet",
@@ -85,6 +87,8 @@ function App() {
             imageUrl: "https://assets-cdn.trustwallet.com/dapps/trust.logo.png",
             aboutUrl: "https://trustwallet.com/about-us",
             bridgeUrl: "https://tonconnect.trustwallet.com/bridge",
+            universalLink: "https://link.trustwallet.com/tc",
+            deepLink: "trust://ton-connect",
             jsBridgeKey: "trustwalletTon",
             platforms: ["chrome", "ios", "android"]
           },
@@ -134,12 +138,14 @@ function App() {
             platforms: ["ios", "android", "macos", "windows", "linux"]
           },
           {
-            appName: 'foxwallet',
-            name: 'FoxWallet',
-            imageUrl: 'https://hc.foxwallet.com/img/logo.png',
-            aboutUrl: 'https://foxwallet.com/',
-            jsBridgeKey: 'foxwallet',
-            platforms: ['ios', 'android', 'macos', 'windows', 'linux']
+            appName: "foxwallet",
+            name: "FoxWallet",
+            imageUrl: "https://hc.foxwallet.com/img/logo.png",
+            aboutUrl: "https://foxwallet.com/",
+            universalLink: "https://link.foxwallet.com/tc",
+            jsBridgeKey: "foxwallet",
+            bridgeUrl: "https://connect.foxwallet.com/ton/bridge",
+            platforms: ["ios", "android"]
           },
           {
             appName: "jambo",
@@ -151,10 +157,19 @@ function App() {
             bridgeUrl: "https://bridge.tonapi.io/bridge",
             jsBridgeKey: "jambowallet",
             platforms: ['android', 'macos', 'windows', 'linux']
+          },
+          {
+            appName: "Gate.io wallet",
+            name: "Gate.io wallet",
+            imageUrl: "https://gimg2.gateimg.com/tgwallet/1730688473495507406-Gatewallet.png",
+            aboutUrl: "https://www.gate.io",
+            universalLink: "https://t.me/gateio_wallet_bot?attach=wallet",
+            bridgeUrl: "https://dapp.gateio.services/tonbridge_api/bridge/v1",
+            platforms: ["ios", "android", "linux", "windows", "macos"]
           }
         ]
       }}
-      // primaryWalletAppName={null}
+      // primaryWalletAppName={'tonkeeper'}
       actionsConfiguration={{
         twaReturnUrl: 'https://t.me/tc_twa_demo_bot/start'
       }}
