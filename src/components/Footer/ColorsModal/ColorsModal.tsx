@@ -1,4 +1,4 @@
-import { THEME } from "@tonconnect/ui-react";
+import { THEME } from "@tonkeeper/tonconnect-ui-react";
 import {useState} from "react";
 import {ColorsSelect} from "../ColorsSelect/ColorsSelect";
 import './style.scss';

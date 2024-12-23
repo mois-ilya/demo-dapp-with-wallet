@@ -1,7 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import ReactJson from 'react-json-view';
 import './style.scss';
-import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
+import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonkeeper/tonconnect-ui-react";
 
 // In this example, we are using a predefined smart contract state initialization (`stateInit`)
 // to interact with an "EchoContract". This contract is designed to send the value back to the sender,

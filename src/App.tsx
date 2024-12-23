@@ -1,6 +1,6 @@
 import './App.scss';
 import './trackers';
-import {THEME, TonConnectUIProvider} from "@tonconnect/ui-react";
+import {THEME, TonConnectUIProvider} from "@tonkeeper/tonconnect-ui-react";
 import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
 import {TxForm} from "./components/TxForm/TxForm";
@@ -169,6 +169,7 @@ function App() {
           }
         ]
       }}
+      // primaryWalletAppName={null}
       actionsConfiguration={{
         twaReturnUrl: 'https://t.me/tc_twa_demo_bot/start'
       }}
