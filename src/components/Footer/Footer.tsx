@@ -33,7 +33,7 @@ export const Footer = () => {
 
     const onPrimaryChange = (value: string) => {
         setOptions({
-            primaryWalletAppName: value === 'unset' ? undefined : value === 'disabled' ? null : value,
+            primaryWalletAppName: value === 'unset' ? 'tonkeeper' : value === 'disabled' ? null : value,
         });
     };
 
