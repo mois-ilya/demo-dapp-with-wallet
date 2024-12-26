@@ -1,12 +1,12 @@
-# Demo dApp with @tonkeeper/tonconnect-ui-react
+# Demo dApp with @tonkeeper/tonconnect-ui-react by Tonkeeper
 
-This Demo dApp showcases the integration with @tonkeeper/tonconnect-ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
+This Demo dApp showcases the integration with @tonkeeper/tonconnect-ui-react. Experience it live at [Demo dApp with Wallet](https://tonkeeper.github.io/demo-dapp-with-wallet/) by Tonkeeper.
 
 ## Learn More About Ton Connect
 
 To understand more about Ton Connect and how it enables blockchain functionalities in your applications, refer to the following resources:
 - Ton Connect Documentation: [https://docs.ton.org/develop/dapps/ton-connect/](https://docs.ton.org/develop/dapps/ton-connect/)
-- Ton Connect SDK and UI Library on GitHub: [https://github.com/ton-connect/sdk/tree/main/packages/ui](https://github.com/ton-connect/sdk/tree/main/packages/ui)
+- Ton Connect SDK and UI Library by Tonkeeper on GitHub: [https://github.com/tonkeeper/tonconnect-sdk/tree/main/packages/ui](https://github.com/tonkeeper/tonconnect-sdk/tree/main/packages/ui)
 
 ## Installation
 
@@ -46,6 +46,20 @@ LocalTunnel Documentation: [https://localtunnel.github.io/www/](https://localtun
 4. After the bot is created, send the `/newapp` command to BotFather.
 5. Select your bot from the list.
 6. Provide all the required information for your Mini App.
+
+### Setting Primary Wallet (Optional)
+
+To specify a primary wallet that will be shown by default in the wallet selection interface, use the `primaryWalletAppName` property in the TonConnectUIProvider configuration. Set it to the `appName` of your preferred wallet from the `walletsListConfiguration`. By default, it's set to "tonkeeper". Set it to `null` to disable the primary wallet feature.
+
+Here's an example configuration:
+
+```jsx
+<TonConnectUIProvider
+    manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+    uiPreferences={{ theme: THEME.DARK }}
+    primaryWalletAppName="tonkeeper"  // Set to null to disable primary wallet
+>
+```
 
 
 ### Returning to the Application (Optional)
