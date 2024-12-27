@@ -196,6 +196,7 @@ function App() {
           }
         ]
       }}
+      // primaryWalletAppName={'tonkeeper'}
       actionsConfiguration={{
         twaReturnUrl: 'https://t.me/tc_twa_demo_bot/start'
       }}
