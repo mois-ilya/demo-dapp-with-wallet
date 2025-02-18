@@ -1,4 +1,4 @@
-import {Account, ConnectAdditionalRequest, TonProofItemReplySuccess} from "@tonconnect/ui-react";
+import {Account, ConnectAdditionalRequest, TonProofItemReplySuccess} from "@tonkeeper/tonconnect-ui-react";
 import './patch-local-storage-for-github-pages';
 
 class TonProofDemoApiService {

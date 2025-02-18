@@ -1,6 +1,7 @@
 import './App.scss';
 import './trackers';
-import { RequireFeature, THEME, TonConnectUIProvider, SendTransactionFeature } from '@tonconnect/ui-react';
+// @ts-ignore
+import { RequireFeature, THEME, TonConnectUIProvider, SendTransactionFeature } from '@tonkeeper/tonconnect-ui-react';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { TxForm } from './components/TxForm/TxForm';
@@ -32,6 +33,7 @@ function App() {
                   aboutUrl: "https://tonkeeper.com",
                   deepLink: "tonkeeper-tc://",
                   universalLink: 'https://app.tonkeeper.com/ton-connect',
+                  // @ts-ignore
                   features: [
                       {
                           name: "SendTransaction",

@@ -1,6 +1,6 @@
-# Demo dApp with @tonconnect/ui-react
+# Demo dApp with @tonkeeper/tonconnect-ui-react
 
-This Demo dApp showcases the integration with @tonconnect/ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
+This Demo dApp showcases the integration with @tonkeeper/tonconnect-ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
 
 ## Learn More About Ton Connect
 

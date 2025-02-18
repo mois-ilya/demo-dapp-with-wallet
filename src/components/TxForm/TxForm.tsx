@@ -1,7 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import ReactJson from 'react-json-view';
 import './style.scss';
-import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
+import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonkeeper/tonconnect-ui-react";
 
 // In this example, we are using a predefined smart contract state initialization (`stateInit`)
 // to interact with an "EchoContract". This contract is designed to send the value back to the sender,
@@ -16,6 +16,7 @@ const defaultTx: SendTransactionRequest = {
 			address: 'EQCKWpx7cNMpvmcN5ObM5lLUZHZRFKqYA4xmw9jOry0ZsF9M',
 			// Amount to send in nanoTON. For example, 0.005 TON is 5000000 nanoTON.
 			amount: '5000000',
+			// @ts-ignore
 			extraCurrency: {
 				0: '1000000000',
 			},

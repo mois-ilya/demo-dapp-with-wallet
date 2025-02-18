@@ -1,4 +1,4 @@
-import {BorderRadius, Locales, ReturnStrategy, Theme, THEME, useTonConnectUI, WalletInfo} from "@tonconnect/ui-react";
+import {BorderRadius, Locales, ReturnStrategy, Theme, THEME, useTonConnectUI, WalletInfo} from "@tonkeeper/tonconnect-ui-react";
 import './footer.scss';
 import {useEffect, useState} from "react";
 import {ColorsModal} from "./ColorsModal/ColorsModal";
