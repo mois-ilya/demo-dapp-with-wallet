@@ -1,6 +1,6 @@
-# Demo dApp with @tonconnect/ui-react
+# Demo dApp with @tonkeeper/tonconnect-ui-react
 
-This Demo dApp showcases the integration with @tonconnect/ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
+This Demo dApp showcases the integration with @tonkeeper/tonconnect-ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
 
 ## Learn More About Ton Connect
 
@@ -46,6 +46,20 @@ LocalTunnel Documentation: [https://localtunnel.github.io/www/](https://localtun
 4. After the bot is created, send the `/newapp` command to BotFather.
 5. Select your bot from the list.
 6. Provide all the required information for your Mini App.
+
+### Setting Primary Wallet (Optional)
+
+To specify a primary wallet that will be shown by default in the wallet selection interface, use the `primaryWalletAppName` property in the TonConnectUIProvider configuration. Set it to the `appName` of your preferred wallet from the `walletsListConfiguration`. By default, it's set to "tonkeeper". Set it to `null` to disable the primary wallet feature.
+
+Here's an example configuration:
+
+```jsx
+<TonConnectUIProvider
+    manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+    uiPreferences={{ theme: THEME.DARK }}
+    primaryWalletAppName="tonkeeper"  // Set to null to disable primary wallet
+>
+```
 
 
 ### Returning to the Application (Optional)

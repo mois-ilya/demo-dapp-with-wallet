@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import {useCallback, useState} from 'react';
 import ReactJson from 'react-json-view';
 import './style.scss';
 import {SendTransactionRequest, useTonConnectUI, useTonWallet} from "@tonconnect/ui-react";
@@ -16,6 +16,10 @@ const defaultTx: SendTransactionRequest = {
 			address: 'EQCKWpx7cNMpvmcN5ObM5lLUZHZRFKqYA4xmw9jOry0ZsF9M',
 			// Amount to send in nanoTON. For example, 0.005 TON is 5000000 nanoTON.
 			amount: '5000000',
+			// @ts-ignore
+			extraCurrency: {
+				0: '1000000000',
+			},
 			// (optional) State initialization in boc base64 format.
 			stateInit: 'te6cckEBBAEAOgACATQCAQAAART/APSkE/S88sgLAwBI0wHQ0wMBcbCRW+D6QDBwgBDIywVYzxYh+gLLagHPFsmAQPsAlxCarA==',
 			// (optional) Payload in boc base64 format.
