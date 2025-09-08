@@ -28,7 +28,7 @@ const walletsRequiredFeatures: RequiredFeatures = {
 function App() {
   return (
     <TonConnectUIProvider
-      manifestUrl="https://tonkeeper.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+      manifestUrl="https://mois-ilya.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
       uiPreferences={{theme: THEME.DARK}}
       // walletsRequiredFeatures={walletsRequiredFeatures}
       // walletsPreferredFeatures={walletsRequiredFeatures}
